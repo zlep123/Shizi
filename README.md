@@ -10,7 +10,7 @@ The app is Chinese-first in its interface, but it records Chinese and Latin text
 
 | File | Size | Notes |
 |---|---:|---|
-| [`Shizi-Lite-v1.7.1-win64.zip`](Shizi-Lite-v1.7.1-win64.zip) | ~23 MB | Portable 64-bit Windows build. Unzip and run `Shizi-Lite.exe`. |
+| [`Shizi-Lite-v1.7.2-win64.zip`](Shizi-Lite-v1.7.2-win64.zip) | ~23 MB | Portable 64-bit Windows build. Unzip and run `Shizi-Lite.exe`. |
 | [`Shizi-intro.mp4`](Shizi-intro.mp4) | ~1.7 MB | One-minute narrated overview. |
 
 **Requirements:** Windows 10 or Windows 11, 64-bit. No installer, no Python, no administrator rights. The executable is unsigned, so Windows SmartScreen may ask you to confirm the first launch.
@@ -39,7 +39,8 @@ Open **Sources** on a day to see which applications and windows contributed text
 - Live characters per minute and Chinese characters per minute, shown separately.
 - A small always-on-top square ball can be dragged anywhere; it shows both speeds and never steals focus.
 - Daily mean and peak speed are calculated with short pauses as boundaries.
-- Very large paste events are excluded from speed statistics so that a single paste does not distort the day.
+- Speed display has a sanity guard of 1200 characters/min and 600 Chinese characters/min, so fast typing is not clipped at the old 600/300 limit.
+- Very large paste events (>40 characters) are excluded from speed statistics so that a single paste does not distort the day.
 
 ![Video poster](docs/video-poster.png)
 
@@ -119,7 +120,7 @@ Compare the result with the checksum file before running the executable.
 
 ## Version
 
-**v1.7.1** — fixes a narrow-sidebar layout bug where the composer footer could clip the date and the **Save note** button at larger interface font sizes.
+**v1.7.2** — raises the speed display guard from 600/300 to **1200 characters/min and 600 Chinese characters/min**, and keeps the compact sidebar speed label readable at four-digit values. Includes the v1.7.1 composer footer fix.
 
 ---
 

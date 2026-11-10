@@ -1,15 +1,16 @@
-# Shizi v1.7.1 — Lite
+﻿# Shizi v1.7.2 — Lite
 
 A quiet, local-first typing journal for Windows.
 
 ## Changes
 
-- Fixed a narrow-sidebar layout bug where the composer footer could clip the date and the Save note button at larger interface font sizes.
-- The composer body now follows the content font setting again.
-- Includes the complete v1.7 appearance system, per-app attribution, speed ball, notes, and offline summaries.
+- Raised the speed display guard from 600 characters/min and 300 Chinese characters/min to **1200 characters/min and 600 Chinese characters/min**, so fast typing is no longer clipped early.
+- Kept the compact sidebar speed label readable at four-digit values (`1.2k/分 · 600汉`).
+- Still excludes paste events over 40 characters from speed statistics, so pasting does not inflate the peak.
+- Includes the v1.7.1 composer footer fix for narrow sidebars at large interface font sizes.
 
 ## Download
 
-- `Shizi-Lite-v1.7.1-win64.zip` — portable Windows 10/11 x64 build (~23 MB).
+- `Shizi-Lite-v1.7.2-win64.zip` — portable Windows 10/11 x64 build (~23 MB).
 
 SHA-256 checksums are in `SHA256SUMS.txt`.
